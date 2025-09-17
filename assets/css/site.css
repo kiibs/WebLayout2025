@@ -1,0 +1,148 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafc;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #111;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  header nav a {
+    color: #61dafb;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  article {
+    background: #fff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  article h3 a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  article h3 a:hover {
+    text-decoration: underline;
+  }
+  
+  figure {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  figure img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  figcaption {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  iframe {
+    margin-top: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .iframe-fallback {
+    background: #f9f1f1;
+    border: 2px dashed #88ce02; /* GSAP verde */
+    padding: 1.2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  .iframe-fallback a {
+    color: #88ce02;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .iframe-fallback a:hover {
+    text-decoration: underline;
+  }
+
+  #notes ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #notes li {
+    background: #f0f4f8;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+    border-left: 6px solid;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  #notes li:hover {
+    background: #e8eef5;
+  }
+  
+  #notes li strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Custom colors for each tool */
+  #notes li:nth-child(1) { border-color: #7952b3; } /* Bootstrap purple */
+  #notes li:nth-child(2) { border-color: #38bdf8; } /* Tailwind blue */
+  #notes li:nth-child(3) { border-color: #cc0000; } /* Jekyll red */
+  #notes li:nth-child(4) { border-color: #88ce02; } /* GSAP green */
+  #notes li:nth-child(5) { border-color: #ff4d6d; } /* Anime.js pink */
+  
+  footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  
