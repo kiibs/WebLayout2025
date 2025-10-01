@@ -1,114 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Web Design Resources — Student Name</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/site.css" />
-  </head>
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web Design Resources — Emma</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/site.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
       <h1>Web Design Resources</h1>
       <p>Student: Emma · Course: 2025/2026</p>
-      <nav>
-        <a href="#frameworks">Frameworks</a> ·
-        <a href="#generators">Static Generators</a> ·
-        <a href="#animations">Animations</a> ·
-        <a href="#notes">Personal Notes</a>
-      </nav>
-    </header>
+    </div>
+    <nav>
+      <a href="#frameworks">Frameworks</a>
+      <a href="#generators">Generators</a>
+      <a href="#animations">Animations</a>
+      <a href="#notes">Notes</a>
+      <a href="#preference">Preference</a>
+    </nav>
+  </header>
 
-    <main>
-      <section id="frameworks">
+  <main>
+    <!-- Grid container for 2-column layout -->
+    <div class="grid-two-columns">
+      <section id="frameworks" class="card">
         <h2>CSS Frameworks</h2>
-
         <article>
           <h3><a href="https://getbootstrap.com/">Bootstrap</a></h3>
+          <p><strong>Notes:</strong> Easy to learn, grid system helps beginners.</p>
           <figure>
-            <img src="assets/img/bootstrap_1.png" alt="Bootstrap demo" width="auto" height="auto" />
-            <figcaption>Screenshot of Bootstrap hero template</figcaption>
-            <img src="assets/img/bootstrap_2.png" alt="Bootstrap demo" width="auto" height="auto" />
-            <figcaption>Screenshot of Bootstrap header template</figcaption>
+            <img src="assets/img/bootstrap_1.png" alt="Bootstrap demo" />
+            <img src="assets/img/bootstrap_2.png" alt="Bootstrap demo" />
           </figure>
-          <p><strong>Notes:</strong> Easy to learn, grid system helps beginners. Risk of looking generic without custom themes.</p>
-          <iframe src="https://getbootstrap.com/" width="900" height="400" loading="lazy"></iframe>
         </article>
-
         <article>
           <h3><a href="https://tailwindcss.com/">TailwindCSS</a></h3>
+          <p><strong>Notes:</strong> Very flexible, but lots of utility class names to learn.</p>
           <figure>
-            <img src="assets/img/TailwindCSS_1.png" alt="Bootstrap demo" width="auto" height="auto" />
-            <img src="assets/img/TailwindCSS_2.png" alt="Bootstrap demo" width="auto" height="auto" />
-            <img src="assets/img/TailwindCSS_3.png" alt="Bootstrap demo" width="auto" height="auto" />
-          </figure>        
-          <p><strong>Notes:</strong> Seems very quick and flexible for building designs, but can be difficult due to needing to learn the names of all the utility classes.</p>
-          <iframe src="https://tailwindcss.com/" width="900" height="400" loading="lazy"></iframe>
+            <img src="assets/img/TailwindCSS_1.png" alt="Tailwind demo" />
+            <img src="assets/img/TailwindCSS_2.png" alt="Tailwind demo" />
+            <img src="assets/img/TailwindCSS_3.png" alt="Tailwind demo" />
+
+          </figure>
         </article>
       </section>
-
-      <section id="generators">
-        <h2>Static Site Generators</h2>
-
+  
+      <section id="generators" class="card">
+        <h2>Static Generators</h2>
         <article>
           <h3><a href="https://jekyllrb.com/">Jekyll</a></h3>
+          <p><strong>Notes:</strong> Beginner-friendly, works great with GitHub Pages.</p>
           <figure>
-            <img src="assets/img/jekyll_1.png" alt="Jekyll demo" width="auto" height="auto" />
-            <img src="assets/img/jekyll_2.png" alt="Jekyll demo" width="auto" height="auto" />
+            <img src="assets/img/jekyll_1.png" alt="Jekyll demo" />
+            <img src="assets/img/jekyll_2.png" alt="Jekyll demo" />
+
           </figure>
-          <p><strong>Notes:</strong> Beginner-friendly, integrates with GitHub Pages. Based on Ruby, so setup can be tricky outside GitHub.</p>
-          <iframe src="https://jekyllrb.com/" width="900" height="400" loading="lazy"></iframe>
         </article>
       </section>
-
-      <section id="animations">
+  
+      <section id="animations" class="card">
         <h2>Animation Libraries</h2>
-
         <article>
           <h3><a href="https://greensock.com/gsap/">GSAP</a></h3>
-          <iframe src="https://www.dorianlods.com/" width="900" height="400" loading="lazy"></iframe>
-          <p><strong>Notes:</strong> Very powerful, professional-grade animations. Steeper learning curve but extremely flexible.</p>
-          <div class="iframe-fallback">
-            <p>⚠️ It is not possible to display the GSAP page at this time.<br/>
-                You can visit it directly here:
-               <a href="https://greensock.com/gsap/" target="_blank">greensock.com/gsap</a>
-            </p>
-          </div>
+          <p><strong>Notes:</strong> Very powerful, professional-grade animations.</p>
         </article>
-
         <article>
           <h3><a href="https://animejs.com/">Anime.js</a></h3>
+          <p><strong>Notes:</strong> Simpler than GSAP, great for smaller projects.</p>
           <figure>
-            <img src="assets/img/animejs_1.png" alt="Anime.js demo" width="auto" height="auto" />
-            <figcaption>Lightweight JavaScript animation</figcaption>
-            <img src="assets/img/animejs_2.png" alt="Anime.js demo" width="auto" height="auto" />
-            <figcaption>Lightweight JavaScript drag animation</figcaption>
+            <img src="assets/img/animejs_1.png" alt="Anime.js demo" />
+            <img src="assets/img/animejs_2.png" alt="Anime.js demo" />
+
           </figure>
-          <p><strong>Notes:</strong> Anime.js looks similar to GSAP, but simpler.</p>
-          <iframe src="https://animejs.com/" width="900" height="400" loading="lazy"></iframe>
         </article>
       </section>
-
-      <section id="notes">
+  
+      <section id="notes" class="card">
         <h2>Personal Notes</h2>
-        <ul>
-            <li><strong>Bootstrap:</strong> Observing the documentation and examples, Bootstrap seems beginner-friendly and quick to implement due to its ready-made components. Customization might require extra effort to avoid a generic look.</li>
-            <li><strong>TailwindCSS:</strong> Based on research, Tailwind looks very flexible and allows rapid prototyping. However, it requires learning a large number of utility class names, which could seriously slow me down.</li>
-            <li><strong>Jekyll:</strong> Jekyll appears useful for static site generation, particularly for blogs and GitHub Pages. It seems to have a stable workflow but Ruby installation may be a barrier.</li>
-            <li><strong>GSAP:</strong> GSAP seems to offer advanced animation capabilities and high flexibility for interactive projects. Observations indicate it might be overwhelming at first for those unfamiliar with complex timelines.</li>
-            <li><strong>Anime.js:</strong> Anime.js looks similar to GSAP in terms of capabilities, but it seems to offer a simpler implementation and coding style, making it more approachable for small projects or lightweight animations.</li>
-            </ul>
-        </section>
-        
-      <section id="preference">
-            <h2>My Preference</h2>
-            <p>Based on my observations and research, I would choose <strong>GSAP</strong> and <strong>Anime.js</strong> for animations, and <strong>Bootstrap</strong> for CSS. GSAP provides professional-level animation tools, Anime.js offers a simpler implementation for lighter projects, and Bootstrap allows quick setup with prebuilt components. This combination seems versatile for building a dynamic and visually appealing portfolio.</p>
-            </section>
-        
-        
-        </main>
+        <ul> <li><strong>Bootstrap:</strong> Observing the documentation and examples, Bootstrap seems beginner-friendly and quick to implement due to its ready-made components. Customization might require extra effort to avoid a generic look.</li> <li><strong>TailwindCSS:</strong> Based on research, Tailwind looks very flexible and allows rapid prototyping. However, it requires learning a large number of utility class names, which could seriously slow me down.</li> <li><strong>Jekyll:</strong> Jekyll appears useful for static site generation, particularly for blogs and GitHub Pages. It seems to have a stable workflow but Ruby installation may be a barrier.</li> <li><strong>GSAP:</strong> GSAP seems to offer advanced animation capabilities and high flexibility for interactive projects. Observations indicate it might be overwhelming at first for those unfamiliar with complex timelines.</li> <li><strong>Anime.js:</strong> Anime.js looks similar to GSAP in terms of capabilities, but it seems to offer a simpler implementation and coding style, making it more approachable for small projects or lightweight animations.</li> </ul>
+      </section>
+    </div>
+  
+    <!-- Single-column for preference -->
+    <section id="preference" class="card single-column">
+      <h2>My Preference</h2>
+      <p>Based on my observations and research, I would choose <strong>GSAP</strong> and <strong>Anime.js</strong> for animations, and <strong>Bootstrap</strong> for CSS. GSAP provides professional-level animation tools, Anime.js offers a simpler implementation for lighter projects, and Bootstrap allows quick setup with prebuilt components. This combination seems versatile for building a dynamic and visually appealing portfolio.</p>    </section>
+  </main>
+  
 
-    <footer>
-      <p>© 2025 · All external links belong to their respective owners.</p>
-    </footer>
-  </body>
+  <footer>
+    <p>© 2025 · All external links belong to their respective owners.</p>
+  </footer>
+</body>
 </html>

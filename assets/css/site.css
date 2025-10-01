@@ -1,148 +1,163 @@
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9fafc;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: #111;
-    color: #fff;
-    padding: 2rem 1rem;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2rem;
-  }
-  
-  header nav a {
-    color: #61dafb;
-    margin: 0 0.5rem;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  header nav a:hover {
-    text-decoration: underline;
-  }
-  
-  main {
-    max-width: 960px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-  
-  section {
-    margin-bottom: 3rem;
-  }
-  
-  h2 {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  article {
-    background: #fff;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  }
-  
-  article h3 a {
-    color: #0077cc;
-    text-decoration: none;
-  }
-  
-  article h3 a:hover {
-    text-decoration: underline;
-  }
-  
-  figure {
-    margin: 1rem 0;
-    text-align: center;
-  }
-  
-  figure img {
-    max-width: 100%;
-    border-radius: 8px;
-  }
-  
-  figcaption {
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
-  iframe {
-    margin-top: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-  }
-  
-  .iframe-fallback {
-    background: #f9f1f1;
-    border: 2px dashed #88ce02; /* GSAP verde */
-    padding: 1.2rem;
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.95rem;
-    color: #333;
-  }
-  
-  .iframe-fallback a {
-    color: #88ce02;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .iframe-fallback a:hover {
-    text-decoration: underline;
-  }
+/* ====== Base ====== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  #notes ul {
-    list-style: none;
-    padding: 0;
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(135deg, #fde2e4, #cde8f3);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+header .header-inner {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+header p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ===== Nav ===== */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.8rem;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(8px);
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #444;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.6rem;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* ===== Grid 2 columns ===== */
+.grid-two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 95%;
+  margin: 2rem auto;
+}
+
+/* ===== Cards ===== */
+.card {
+  background: #fff;
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid #f6b8d1;
+  padding-left: 0.5rem;
+}
+
+/* ===== Single-column card ===== */
+.single-column {
+  grid-column: 1 / -1; /* Span full width */
+  width: 95%;
+  margin: 2rem auto;
+}
+
+/* ===== Articles ===== */
+article {
+  margin-bottom: 1.2rem;
+}
+
+article h3 a {
+  color: #4c6085;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+article h3 a:hover {
+  text-decoration: underline;
+}
+
+article p {
+  margin: 0.5rem 0 1rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* ===== Figures & Images ===== */
+figure {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 0.8rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* ===== Lists ===== */
+ul {
+  padding-left: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.6rem;
+  border-left: 4px solid #c8e7d8;
+  padding-left: 0.6rem;
+  font-size: 0.95rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 1.2rem;
+  color: #777;
+  margin-top: 2rem;
+}
+
+/* ===== Responsive adjustments ===== */
+@media screen and (max-width: 900px) {
+  .grid-two-columns {
+    grid-template-columns: 1fr;
   }
-  
-  #notes li {
-    background: #f0f4f8;
-    margin-bottom: 1rem;
-    padding: 1rem 1.5rem;
-    border-left: 6px solid;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: background 0.3s;
+  .single-column {
+    width: 95%;
   }
-  
-  #notes li:hover {
-    background: #e8eef5;
-  }
-  
-  #notes li strong {
-    display: block;
-    font-size: 1.1rem;
-    margin-bottom: 0.3rem;
-  }
-  
-  /* Custom colors for each tool */
-  #notes li:nth-child(1) { border-color: #7952b3; } /* Bootstrap purple */
-  #notes li:nth-child(2) { border-color: #38bdf8; } /* Tailwind blue */
-  #notes li:nth-child(3) { border-color: #cc0000; } /* Jekyll red */
-  #notes li:nth-child(4) { border-color: #88ce02; } /* GSAP green */
-  #notes li:nth-child(5) { border-color: #ff4d6d; } /* Anime.js pink */
-  
-  footer {
-    background: #111;
-    color: #aaa;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-  }
-  
+}
