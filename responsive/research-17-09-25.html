@@ -32,10 +32,12 @@
           <a href="#frameworks">Frameworks</a>
           <a href="#generators">Generators</a>
           <a href="#animations">Animations</a>
+          <a href="#javascript">JavaScript</a>
           <a href="#notes">Personal Notes</a>
           <a href="#preference">Reflection</a>
         </nav>
       </header>
+      <br />
 
       <main class="container">
         <section id="intro" class="card single-column">
@@ -54,7 +56,7 @@
 
           <article class="tool-card">
             <h3><a href="https://getbootstrap.com/">Bootstrap</a></h3>
-            <span class="runtime-badge standalone">Standalone</span>
+            <span class="runtime-badge CDN">CDN</span>
             <p>
               <strong>Notes:</strong> Easy to learn, grid system helps
               beginners.
@@ -62,6 +64,7 @@
             <figure>
               <img src="../assets/img/bootstrap_1.png" alt="Bootstrap demo" />
               <img src="../assets/img/bootstrap_2.png" alt="Bootstrap demo" />
+              <img src="../assets/img/bootstrap_3.png" alt="Bootstrap demo" />
             </figure>
           </article>
 
@@ -119,20 +122,21 @@
 
           <article class="tool-card">
             <h3><a href="https://greensock.com/gsap/">GSAP</a></h3>
-            <span class="runtime-badge standalone">Standalone</span>
+            <span class="runtime-badge CDN">CDN</span>
 
             <p>
               <strong>Notes:</strong> Very powerful, professional-grade
               animations.
             </p>
             <figure>
-              <img src="../assets/img/gsap_1.png" alt="GSAP demo" />
+              <img src="../assets/img/GSAP_1.png" alt="GSAP demo" />
+              <img src="../assets/img/GSAP_2.png" alt="GSAP demo" />
             </figure>
           </article>
 
           <article class="tool-card">
             <h3><a href="https://animejs.com/">Anime.js</a></h3>
-            <span class="runtime-badge standalone">Standalone</span>
+            <span class="runtime-badge CDN">CDN</span>
 
             <p>
               <strong>Notes:</strong> Simpler than GSAP, great for smaller
@@ -145,33 +149,98 @@
           </article>
         </section>
 
+        <!-- JavaScript Frameworks -->
+        <section id="javascript" class="card">
+          <h2>JavaScript Frameworks</h2>
+
+          <article class="tool-card">
+            <h3><a href="https://react.dev/">React</a></h3>
+            <span class="runtime-badge nodejs">Node.js</span>
+            <p>
+              <strong>Notes:</strong> A JavaScript library for building
+              interactive user interfaces. Component-based architecture makes it
+              highly reusable and efficient.
+            </p>
+            <figure>
+              <img src="../assets/img/react_1.png" alt="React UI example" />
+              <img src="../assets/img/react_2.png" alt="React code example" />
+            </figure>
+          </article>
+
+          <article class="tool-card">
+            <h3><a href="https://vitejs.dev/">Vite</a></h3>
+            <span class="runtime-badge nodejs">Node.js</span>
+            <p>
+              <strong>Notes:</strong> Extremely fast and lightweight build tool
+              for modern JavaScript projects. Simplifies development workflow
+              and supports hot module replacement.
+            </p>
+            <figure>
+              <img src="../assets/img/vita_2.png" alt="React UI example" />
+              <img src="../assets/img/vita_1.png" alt="React code example" />
+            </figure>
+          </article>
+        </section>
+
         <!-- Personal Notes -->
         <section id="notes" class="card single-column personal-notes">
           <h2>Personal Notes</h2>
           <ul>
             <li>
-              <strong>Bootstrap:</strong> Quick setup, beginner-friendly,
-              components easy to use.
+              <strong>Runtimes:</strong> During the previous course, I already
+              installed Node.js, so I am comfortable using tools which require
+              it. However, I do not currently have other runtimes (like Ruby),
+              and I prefer to avoid adding more dependencies to my setup. For
+              this reason, I will prioritize standalone tools or those that work
+              directly with Node, since they fit better with my current workflow
+              and environment.
             </li>
             <li>
-              <strong>TailwindCSS:</strong> Flexible, but learning curve is
-              steeper due to utility classes.
+              <strong>Bootstrap:</strong> Observing the documentation and
+              examples, Bootstrap seems beginner-friendly and quick to implement
+              due to its ready-made components. Customization might require
+              extra effort to avoid a generic look.
             </li>
             <li>
-              <strong>Jekyll:</strong> Ideal for blogs; requires Ruby
-              installation.
+              <strong>TailwindCSS:</strong> Based on research, Tailwind looks
+              very flexible and allows rapid prototyping. However, it requires
+              learning a large number of utility class names, which could
+              seriously slow me down.
             </li>
             <li>
-              <strong>Hugo:</strong> Fast, minimal configuration, standalone
-              binary.
+              <strong>Jekyll:</strong> Jekyll appears useful for static site
+              generation, particularly for blogs and GitHub Pages. It seems to
+              have a stable workflow but Ruby installation is a barrier.
             </li>
             <li>
-              <strong>GSAP:</strong> Advanced animations, professional quality,
-              slightly steep learning curve.
+              <strong>Hugo:</strong> Hugo is extremely fast and easy to set up,
+              running as a standalone executable without extra runtimes. Its
+              simple templating system and clear structure make it efficient for
+              building both small and large static sites with minimal
+              configuration.
             </li>
             <li>
-              <strong>Anime.js:</strong> Lightweight animations, simple
-              implementation for small projects.
+              <strong>GSAP:</strong> GSAP seems to offer advanced animation
+              capabilities and high flexibility for interactive projects. My
+              observations indicate it might be overwhelming at first for those
+              unfamiliar with complex timelines.
+            </li>
+            <li>
+              <strong>Anime.js:</strong> Anime.js looks similar to GSAP in terms
+              of capabilities, but it seems to offer a simpler implementation
+              and coding style, making it more approachable for small projects
+              or lightweight animations.
+            </li>
+            <li>
+              <strong>React:</strong> React is a powerful JavaScript library for
+              building dynamic user interfaces and single-page applications.
+              Once set up, it enables reusable components, efficient rendering,
+              and a flexible workflow for modern web projects.
+            </li>
+            <li>
+              <strong>Vite:</strong> Modern build tool, very fast, lightweight,
+              and simplifies development workflow. Great for modern JS projects
+              and experimenting with frameworks without heavy configuration.
             </li>
           </ul>
         </section>

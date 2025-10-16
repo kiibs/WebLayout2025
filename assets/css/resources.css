@@ -1,3 +1,12 @@
+header {
+  background-color: #fdcfaf;
+  color: #000000;
+}
+
+nav a {
+  color: #000000;
+}
+
 /* ===== CONTAINER & GRID ===== */
 .container {
   max-width: 1400px;
@@ -26,6 +35,15 @@
 .card:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 1.75rem; /* mismo tamaño que Personal Notes */
+  margin-bottom: var(--spacing-md);
+  color: #f59e0b;
+  border-bottom: 2px solid #fcd34d; /* opcional, igual que Personal Notes */
+  display: inline-block; /* para que la línea no ocupe toda la sección */
+  padding-bottom: 0.25rem;
 }
 
 /* ===== TOOL CARD ===== */
@@ -66,6 +84,11 @@
   color: #1e293b;
 }
 
+.runtime-badge.CDN {
+  background-color: #ffe798;
+  color: #1e293b;
+}
+
 /* ===== FIGURE ONE COLUMN ===== */
 figure img {
   width: 100%;
@@ -74,9 +97,49 @@ figure img {
 
 /* ===== PERSONAL NOTES & REFLECTION ===== */
 .personal-notes {
-  background-color: #fef9f0;
-  padding: var(--spacing-md);
-  border-left: 4px solid var(--accent-color);
+  background: linear-gradient(135deg, #fdf6f0 0%, #fef9f0 100%);
+  border-left: 6px solid #f59e0b; /* color de acento */
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin: var(--spacing-xl) 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.personal-notes:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+}
+
+.personal-notes h2 {
+  color: #f59e0b; /* acento */
+  font-size: 1.75rem;
+  margin-bottom: var(--spacing-md);
+  border-bottom: 2px solid #fcd34d;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+.personal-notes ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.personal-notes li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.6;
+}
+
+.personal-notes li::before {
+  content: "•"; /* viñeta moderna */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f59e0b;
+  font-size: 1.25rem;
+  line-height: 1;
 }
 
 .single-column p,
