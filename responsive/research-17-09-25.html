@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Design Resources — Emma</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/resources.css" />
+  </head>
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Web Design Resources — Emma</title>
+      <link rel="stylesheet" type="text/css" href="../assets/css/index.css" />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="../assets/css/resources.css"
+      />
+    </head>
+    <body>
+      <header>
+        <div class="header-inner">
+          <h1>Web Design Resources</h1>
+          <p>Student: Emma · Course: 2025/2026</p>
+        </div>
+        <nav>
+          <a href="#intro">Intro</a>
+          <a href="#frameworks">Frameworks</a>
+          <a href="#generators">Generators</a>
+          <a href="#animations">Animations</a>
+          <a href="#notes">Personal Notes</a>
+          <a href="#preference">Reflection</a>
+        </nav>
+      </header>
+
+      <main class="container">
+        <section id="intro" class="card single-column">
+          <h2>Project Introduction</h2>
+          <p>
+            This reference page collects modern web design tools, organized by
+            category. It provides key notes, runtime requirements, and personal
+            reflections. The purpose is to have a clear, minimalistic, and
+            dynamic guide for future projects.
+          </p>
+        </section>
+
+        <!-- CSS Frameworks -->
+        <section id="frameworks" class="card">
+          <h2>CSS Frameworks</h2>
+
+          <article class="tool-card">
+            <h3><a href="https://getbootstrap.com/">Bootstrap</a></h3>
+            <span class="runtime-badge standalone">Standalone</span>
+            <p>
+              <strong>Notes:</strong> Easy to learn, grid system helps
+              beginners.
+            </p>
+            <figure>
+              <img src="../assets/img/bootstrap_1.png" alt="Bootstrap demo" />
+              <img src="../assets/img/bootstrap_2.png" alt="Bootstrap demo" />
+            </figure>
+          </article>
+
+          <article class="tool-card">
+            <h3><a href="https://tailwindcss.com/">TailwindCSS</a></h3>
+            <span class="runtime-badge nodejs">Node.js</span>
+            <p>
+              <strong>Notes:</strong> Very flexible, but requires learning many
+              utility classes.
+            </p>
+            <figure>
+              <img src="../assets/img/tailwindcss_1.png" alt="Tailwind demo" />
+              <img src="../assets/img/tailwindcss_2.png" alt="Tailwind demo" />
+            </figure>
+          </article>
+        </section>
+
+        <!-- Static Generators -->
+        <section id="generators" class="card">
+          <h2>Static Generators</h2>
+
+          <article class="tool-card">
+            <h3><a href="https://jekyllrb.com/">Jekyll</a></h3>
+            <span class="runtime-badge ruby">Ruby</span>
+
+            <p>
+              <strong>Notes:</strong> Beginner-friendly, works great with GitHub
+              Pages.
+            </p>
+            <figure>
+              <img src="../assets/img/jekyll_1.png" alt="Jekyll demo" />
+              <img src="../assets/img/jekyll_2.png" alt="Jekyll demo" />
+            </figure>
+          </article>
+
+          <article class="tool-card">
+            <h3><a href="https://gohugo.io/">Hugo</a></h3>
+            <span class="runtime-badge standalone">Standalone</span>
+
+            <p>
+              <strong>Notes:</strong> Ultra-fast, easy to use for large sites
+              and blogs.
+            </p>
+            <figure>
+              <img src="../assets/img/Hugo_1.png" alt="Hugo demo" />
+              <img src="../assets/img/Hugo_2.png" alt="Hugo demo" />
+            </figure>
+          </article>
+        </section>
+
+        <!-- Animation Libraries -->
+        <section id="animations" class="card">
+          <h2>Animation Libraries</h2>
+
+          <article class="tool-card">
+            <h3><a href="https://greensock.com/gsap/">GSAP</a></h3>
+            <span class="runtime-badge standalone">Standalone</span>
+
+            <p>
+              <strong>Notes:</strong> Very powerful, professional-grade
+              animations.
+            </p>
+            <figure>
+              <img src="../assets/img/gsap_1.png" alt="GSAP demo" />
+            </figure>
+          </article>
+
+          <article class="tool-card">
+            <h3><a href="https://animejs.com/">Anime.js</a></h3>
+            <span class="runtime-badge standalone">Standalone</span>
+
+            <p>
+              <strong>Notes:</strong> Simpler than GSAP, great for smaller
+              projects.
+            </p>
+            <figure>
+              <img src="../assets/img/animejs_1.png" alt="Anime.js demo" />
+              <img src="../assets/img/animejs_2.png" alt="Anime.js demo" />
+            </figure>
+          </article>
+        </section>
+
+        <!-- Personal Notes -->
+        <section id="notes" class="card single-column personal-notes">
+          <h2>Personal Notes</h2>
+          <ul>
+            <li>
+              <strong>Bootstrap:</strong> Quick setup, beginner-friendly,
+              components easy to use.
+            </li>
+            <li>
+              <strong>TailwindCSS:</strong> Flexible, but learning curve is
+              steeper due to utility classes.
+            </li>
+            <li>
+              <strong>Jekyll:</strong> Ideal for blogs; requires Ruby
+              installation.
+            </li>
+            <li>
+              <strong>Hugo:</strong> Fast, minimal configuration, standalone
+              binary.
+            </li>
+            <li>
+              <strong>GSAP:</strong> Advanced animations, professional quality,
+              slightly steep learning curve.
+            </li>
+            <li>
+              <strong>Anime.js:</strong> Lightweight animations, simple
+              implementation for small projects.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Critical Reflection -->
+        <section id="preference" class="card single-column">
+          <h2>Critical Reflection</h2>
+          <p>
+            For CSS frameworks, I prefer <strong>Bootstrap</strong> for quick
+            prototyping, but <strong>TailwindCSS</strong> is great for highly
+            customized designs. For animations, <strong>GSAP</strong> offers
+            professional control, while <strong>Anime.js</strong> is suitable
+            for small projects. Regarding static generators,
+            <strong>Hugo</strong> is my choice for large sites due to speed, and
+            <strong>Jekyll</strong> for simple blogs. The combination of these
+            tools balances speed, flexibility, and minimal dependencies.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>© 2025 · All external links belong to their respective owners.</p>
+      </footer>
+    </body>
+  </html>
+</html>
